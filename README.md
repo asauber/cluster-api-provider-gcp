@@ -50,6 +50,7 @@ Participation in the Kubernetes community is governed by the [Kubernetes Code of
 1. Create a cluster:
 
    ```bash
+   export GOOGLE_APPLICATION_CREDENTIALS="cmd/clusterctl/examples/google/out/machine-controller-serviceaccount.json"
    ./bin/clusterctl create cluster --provider google -c cmd/clusterctl/examples/google/out/cluster.yaml -m cmd/clusterctl/examples/google/out/machines.yaml -p cmd/clusterctl/examples/google/out/provider-components.yaml -a cmd/clusterctl/examples/google/out/addons.yaml
    ```
 
